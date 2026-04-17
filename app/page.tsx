@@ -39,17 +39,30 @@ const comparison = [
 export default function LandingPage() {
   return (
     <main className="bg-background">
-      <section className="relative flex min-h-[86svh] overflow-hidden text-white">
-        <Image
-          src="/multisell-hero.png"
-          alt="MultiSell dashboard publishing one listing to multiple marketplaces"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/35" />
+      <section className="relative flex min-h-[86svh] overflow-hidden bg-[#101615] text-white">
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
-          <nav className="flex items-center justify-between">
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <Image
+              src="/multisell-hero.png"
+              alt=""
+              fill
+              priority
+              aria-hidden
+              sizes="(min-width: 1280px) 1280px, 100vw"
+              className="scale-110 object-cover object-center opacity-45 blur-2xl"
+            />
+            <Image
+              src="/multisell-hero.png"
+              alt="MultiSell dashboard publishing one listing to multiple marketplaces"
+              fill
+              priority
+              sizes="(min-width: 1280px) 1280px, 100vw"
+              className="object-contain object-center opacity-95"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.84)_0%,rgba(0,0,0,0.70)_34%,rgba(0,0,0,0.28)_66%,rgba(0,0,0,0.42)_100%)]" />
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/55 to-transparent" />
+          </div>
+          <nav className="relative z-10 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-sm font-black text-foreground">
                 MS
@@ -65,7 +78,7 @@ export default function LandingPage() {
               </Button>
             </div>
           </nav>
-          <div className="flex flex-1 items-center">
+          <div className="relative z-10 flex flex-1 items-center">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 rounded-lg border border-white/25 bg-white/10 px-3 py-1 text-sm">
                 <ShieldCheck className="h-4 w-4" />
