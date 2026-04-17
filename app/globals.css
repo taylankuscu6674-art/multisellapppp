@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 30% 98%;
+  --foreground: 210 22% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 22% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 22% 12%;
+  --primary: 166 78% 31%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 8 86% 62%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 16% 93%;
+  --muted-foreground: 218 10% 43%;
+  --accent: 48 95% 56%;
+  --accent-foreground: 210 22% 12%;
+  --destructive: 0 80% 57%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 18% 87%;
+  --input: 214 18% 87%;
+  --ring: 166 78% 31%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+::selection {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(hsl(var(--border) / 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.45) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
