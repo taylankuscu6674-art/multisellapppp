@@ -1,5 +1,5 @@
-# MultiseLL.com
+# MultiSELLER
 
-Site link: http://127.0.0.1:3000
+Site link: http://multiseller.local:3000
 
-App link: http://127.0.0.1:3000/app
+App link: http://multiseller.local:3000/app

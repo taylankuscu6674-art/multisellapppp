@@ -17,22 +17,22 @@ const comparison = [
   {
     label: "Approved API publishing",
     manual: "Platform by platform",
-    multisell: "Central review and logs"
+    multiseller: "Central review and logs"
   },
   {
     label: "Unsupported marketplaces",
     manual: "Scattered notes",
-    multisell: "Manual queue with required fields"
+    multiseller: "Manual queue with required fields"
   },
   {
     label: "Product photos",
     manual: "Repeated uploads",
-    multisell: "Resize, order, and cover control"
+    multiseller: "Resize, order, and cover control"
   },
   {
     label: "Audit trail",
     manual: "Hard to reconstruct",
-    multisell: "Every attempt tracked"
+    multiseller: "Every attempt tracked"
   }
 ];
 
@@ -43,7 +43,7 @@ export default function LandingPage() {
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <Image
-              src="/multisell-hero-retina.webp"
+              src="/multiseller-hero-retina.webp"
               alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
               fill
               priority
@@ -182,7 +182,7 @@ export default function LandingPage() {
                 <span className="text-muted-foreground">{row.manual}</span>
                 <span className="flex items-center gap-2 font-semibold text-primary">
                   <CheckCircle2 className="h-4 w-4" />
-                  {row.multisell}
+                  {row.multiseller}
                 </span>
               </div>
             ))}

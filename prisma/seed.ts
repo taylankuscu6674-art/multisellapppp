@@ -60,8 +60,8 @@ async function main() {
   const user = await prisma.user.create({
     data: {
       id: "demo-user",
-      name: "MultiseLL.com Demo",
-      email: "admin@multisell.com",
+      name: "MultiSELLER Demo",
+      email: "admin@multiseller.com",
       role: "owner"
     }
   });

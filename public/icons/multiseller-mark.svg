@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MultiSELLER mark">
+  <rect width="512" height="512" rx="96" fill="#0f766e"/>
+  <path fill="#ffffff" d="M126 344V168h50l80 104 80-104h50v176h-54V253l-57 72h-38l-57-72v91h-54Z"/>
+  <path fill="#facc15" d="M128 374h256v34H128z"/>
+</svg>

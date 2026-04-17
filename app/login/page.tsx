@@ -22,11 +22,11 @@ export default function LoginPage() {
         <CardContent className="space-y-4">
           <div className="grid gap-2">
             <Label>Email</Label>
-            <Input defaultValue="admin@multisell.com" type="email" />
+            <Input defaultValue="admin@multiseller.com" type="email" />
           </div>
           <div className="grid gap-2">
             <Label>Password</Label>
-            <Input defaultValue="multisell-demo" type="password" />
+            <Input defaultValue="multiseller-demo" type="password" />
           </div>
           <Button asChild className="w-full">
             <Link href="/dashboard">Continue to dashboard</Link>

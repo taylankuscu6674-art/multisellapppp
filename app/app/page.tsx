@@ -60,7 +60,7 @@ export default function AppLaunchPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg">
-                <Link href="/dashboard">
+                <Link href={siteConfig.dashboardPath}>
                   Open web app
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -68,7 +68,7 @@ export default function AppLaunchPage() {
               <Button asChild size="lg" variant="outline">
                 <a href={siteConfig.downloadUrl}>
                   <Download className="mr-2 h-4 w-4" />
-                  Download app package
+                  Download source package
                 </a>
               </Button>
             </div>

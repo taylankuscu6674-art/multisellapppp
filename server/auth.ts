@@ -16,7 +16,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         return {
           id: "demo-user",
-          name: "MultiseLL.com Demo",
+          name: "MultiSELLER Demo",
           email: String(credentials.email)
         };
       }

@@ -1,15 +1,18 @@
 {
-  "name": "multisell-marketplace-manager",
+  "name": "multiseller-marketplace-manager",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "predev": "node scripts/clean-next.mjs",
     "dev": "next dev",
+    "predev:domain": "node scripts/clean-next.mjs",
+    "dev:domain": "next dev --hostname 0.0.0.0 --port 3000",
     "prebuild": "node scripts/clean-next.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "check:deployment": "npm run lint && npm run typecheck && npm run build",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts"
