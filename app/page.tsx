@@ -41,13 +41,13 @@ export default function LandingPage() {
     <main className="bg-background">
       <section className="relative flex min-h-[86svh] overflow-hidden text-white">
         <Image
-          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2200&q=80"
-          alt="Second-hand fashion sellers preparing listings"
+          src="/multisell-hero.png"
+          alt="MultiSell dashboard publishing one listing to multiple marketplaces"
           fill
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/35" />
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
           <nav className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
