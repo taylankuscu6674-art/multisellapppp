@@ -39,21 +39,9 @@ const comparison = [
 export default function LandingPage() {
   return (
     <main className="bg-background">
-      <section className="relative flex min-h-[760px] overflow-hidden bg-[#101615] text-white md:min-h-[594px]">
-        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
-          <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center overflow-hidden">
-            <Image
-              src="/multisell-hero.png"
-              alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
-              width={1024}
-              height={576}
-              priority
-              unoptimized
-              sizes="1024px"
-              className="h-auto w-[1024px] max-w-none select-none"
-            />
-          </div>
-          <nav className="relative z-10 flex items-center justify-between">
+      <section className="bg-[#101615] text-white">
+        <div className="mx-auto flex w-full max-w-7xl flex-col px-6 py-6">
+          <nav className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-sm font-black text-foreground">
                 MS
@@ -69,13 +57,13 @@ export default function LandingPage() {
               </Button>
             </div>
           </nav>
-          <div className="relative z-10 flex flex-1 items-center">
-            <div className="max-w-3xl">
+          <div className="py-10">
+            <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 rounded-lg border border-white/25 bg-white/10 px-3 py-1 text-sm">
                 <ShieldCheck className="h-4 w-4" />
                 Compliance-first marketplace operations
               </div>
-              <h1 className="mt-6 text-5xl font-semibold tracking-normal sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 max-w-4xl text-5xl font-semibold tracking-normal sm:text-6xl lg:text-7xl">
                 List once. Review clearly. Publish only where allowed.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
@@ -121,6 +109,18 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
+        <div className="flex justify-center bg-[#101615] px-0 pb-0">
+          <Image
+            src="/multisell-hero.png"
+            alt={`${siteConfig.name} dashboard publishing one listing to multiple marketplaces`}
+            width={1024}
+            height={576}
+            priority
+            unoptimized
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="block h-auto w-full max-w-[1024px] select-none"
+          />
+          </div>
       </section>
 
       <section className="px-6 py-16">
